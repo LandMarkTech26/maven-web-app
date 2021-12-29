@@ -12,11 +12,7 @@
 <h1 align="center">Landmark Technologies</h1>
 <h2 align="center"> Welcome to Landmark Technology. WE ARE SIMPLY THE BEST. FINAL OUTPUT. WEBHOOK CONFIGURE
 	Landmark Technology is a an ideal online training  platform for DevOps and Cloud Engineers. 
-<<<<<<< HEAD
 	We offer interview preparations and job assitance. We ensure you get the job
-=======
-	We offer interview preparations and job assitance. We produce the best students
->>>>>>> ff941d343da7312be9d97a2cdbd7a1a38ad07c1d
 	The shout of the King is in our midst. His name is JESUS.  HE IS OUR SUCCESS ACCESS KEY</h2>
 <hr>
 <div style="text-align: center;">
