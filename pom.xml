@@ -22,11 +22,17 @@
 		<spring.version>5.1.2.RELEASE</spring.version>
 		<junit.version>4.11</junit.version>
 		<log4j.version>1.2.17</log4j.version>
+<<<<<<< HEAD
 		<sonar.host.url>http:172.31.17.73:9000/</sonar.host.url>
 		<sonar.login>51a6e8d01b5259a0328fa455a7737705d6ae91f5</sonar.login>
 <!--	
 	<sonar.password>admin</sonar.password>
 -->
+=======
+		<sonar.host.url>http://172.31.17.73:9000/</sonar.host.url>
+		<sonar.login>admin</sonar.login>
+		<sonar.password>admin</sonar.password>
+>>>>>>> ff941d343da7312be9d97a2cdbd7a1a38ad07c1d
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 
@@ -109,15 +115,23 @@ http://3.131.99.16:8081/repository/boa-snapshot/
 	    <repository>
 	      <id>nexus</id>
 	      <name>Landmark Technologies Releases Nexus Repository</name>
+<<<<<<< HEAD
 	      <url>http://172.31.18.193:8081/repository/boa-releases/</url>
+=======
+	      <url>http://172.31.18.193:8081/repository/td-web-application-releases/</url>
+>>>>>>> ff941d343da7312be9d97a2cdbd7a1a38ad07c1d
 	    </repository>
 	    
 	    <snapshotRepository>
 	      <id>nexus</id>
 	      <name>Landmark Technologies Snapshot Nexus Repository </name>
+<<<<<<< HEAD
 	      <url>http://172.31.18.193:8081/repository/boa-snapshot/</url>
+=======
+	      <url>http://172.31.18.193:8081/repository/td-web-application-snapshots/</url>
+>>>>>>> ff941d343da7312be9d97a2cdbd7a1a38ad07c1d
 	    </snapshotRepository>
-	    
+		
 	</distributionManagement>
 	
 	<build>

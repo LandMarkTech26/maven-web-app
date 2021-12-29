@@ -1,0 +1,42 @@
+node('master')
+  {
+   def mavenHome = tool name: 'maven3.8.4'
+  stage('1.git clone')
+  {
+  git 'https://github.com/LandMarkTech26/maven-web-app'
+  }
+  stage('2.maven-Build')
+  { 
+  sh "${mavenHome}/bin/mvn clean package"
+  }
+  stage('3.CodeQualityReport')
+  {
+  sh "${mavenHome}/bin/mvn sonar:sonar"
+  }
+ stage('4.UploadWarNexus')
+  {
+  sh "${mavenHome}/bin/mvn deploy"
+  }
+ stage('5.Deploy-UAT')
+  {
+   deploy adapters: [tomcat9(credentialsId: 'tomcatCredential-deploy', path: '', url: 'http://3.144.131.160:8080/')], contextPath: null, war: 'target/*.war'     
+  }  
+ stage('6.EmailNotification')
+  {
+  emailext body: '''Hello Developer,
+
+Build from Td pipeline project
+
+AlexFintechnologies''', subject: 'Build status', to: 'Developers'
+  }
+  stage('7.Approval')
+  {
+  timeout(time:8, unit: 'HOURS')  {
+  input message: 'Please verify and approve'
+  }
+  }
+  stage('8.Prod-deploy')
+  {
+  deploy adapters: [tomcat9(credentialsId: 'tomcatCredential-deploy', path: '', url: 'http://3.144.131.160:8080/')], contextPath: null, war: 'target/*.war'
+  }
+  } 
