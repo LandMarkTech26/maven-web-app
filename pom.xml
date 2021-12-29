@@ -5,7 +5,8 @@
 	<groupId>com.mt</groupId>
 	<artifactId>maven-web-application</artifactId>
 	<packaging>war</packaging>
-	<version>0.0.1-SNAPSHOT</version>
+ <!--   <version>1.0</version>  -->
+        <version>0.0.1-SNAPSHOT</version> 
 	
 	<name>maven-web-application</name>
 
@@ -21,9 +22,11 @@
 		<spring.version>5.1.2.RELEASE</spring.version>
 		<junit.version>4.11</junit.version>
 		<log4j.version>1.2.17</log4j.version>
-		<sonar.host.url>http:3.238.135.186:9000/</sonar.host.url>
-		<sonar.login>admin</sonar.login>
-		<sonar.password>admin</sonar.password>
+		<sonar.host.url>http:172.31.17.73:9000/</sonar.host.url>
+		<sonar.login>51a6e8d01b5259a0328fa455a7737705d6ae91f5</sonar.login>
+<!--	
+	<sonar.password>admin</sonar.password>
+-->
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 
@@ -92,18 +95,27 @@
 		</dependency>
 		
 	</dependencies>
+
+<!--
+
+http://3.131.99.16:8081/repository/boa-releases/
+
+http://3.131.99.16:8081/repository/boa-snapshot/
+
+-->
+
 	
 	<distributionManagement>
 	    <repository>
 	      <id>nexus</id>
 	      <name>Landmark Technologies Releases Nexus Repository</name>
-	      <url>http://44.192.81.238:8888/mylandmarktech/repository/boa-release/</url>
+	      <url>http://172.31.18.193:8081/repository/boa-releases/</url>
 	    </repository>
 	    
 	    <snapshotRepository>
 	      <id>nexus</id>
 	      <name>Landmark Technologies Snapshot Nexus Repository </name>
-	      <url>http://44.192.81.238:8888/mylandmarktech/repository/boa-snapshot/</url>
+	      <url>http://172.31.18.193:8081/repository/boa-snapshot/</url>
 	    </snapshotRepository>
 	    
 	</distributionManagement>
