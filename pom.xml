@@ -17,7 +17,7 @@
 		<url>http://landmarktechnologies.com/</url>
 	</organization>
 
-	<properties>
+	<properties> 
 		<jdk.version>1.8</jdk.version>
 		<spring.version>5.1.2.RELEASE</spring.version>
 		<junit.version>4.11</junit.version>
@@ -29,11 +29,12 @@
 -->
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
-
+     <!--
 		<properties>
 		<sonar.organization>mylandmarktechs</sonar.organization>
          <sonar.host.url>https://sonarcloud.io</sonar.host.url>
         </properties>
+		-->
 	</properties>
 
 	<dependencies>
@@ -113,21 +114,13 @@ http://3.131.99.16:8081/repository/boa-snapshot/
 	    <repository>
 	      <id>nexus</id>
 	      <name>Landmark Technologies Releases Nexus Repository</name>
-<<<<<<< HEAD
 	      <url>http://172.31.18.193:8081/repository/boa-releases/</url>
-=======
-	      <url>http://172.31.18.193:8081/repository/td-web-application-releases/</url>
->>>>>>> ff941d343da7312be9d97a2cdbd7a1a38ad07c1d
 	    </repository>
 	    
 	    <snapshotRepository>
 	      <id>nexus</id>
 	      <name>Landmark Technologies Snapshot Nexus Repository </name>
-<<<<<<< HEAD
 	      <url>http://172.31.18.193:8081/repository/boa-snapshot/</url>
-=======
-	      <url>http://172.31.18.193:8081/repository/td-web-application-snapshots/</url>
->>>>>>> ff941d343da7312be9d97a2cdbd7a1a38ad07c1d
 	    </snapshotRepository>
 		
 	</distributionManagement>
