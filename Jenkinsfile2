@@ -19,7 +19,7 @@ node('master')
   }
  stage('5.Deploy-UAT')
   {
-   deploy adapters: [tomcat9(credentialsId: 'tomcatCredential-deploy', path: '', url: 'http://3.144.131.160:8080/')], contextPath: null, war: 'target/*.war'     
+   deploy adapters: [tomcat9(credentialsId: 'tomcatCredential-deploy', path: '', url: 'http://3.144.22.54:8080/')], contextPath: null, war: 'target/*.war'     
   }  
  stage('6.EmailNotification')
   {
@@ -37,6 +37,6 @@ AlexFintechnologies''', subject: 'Build status', to: 'Developers'
   }
   stage('8.Prod-deploy')
   {
-  deploy adapters: [tomcat9(credentialsId: 'tomcatCredential-deploy', path: '', url: 'http://3.144.131.160:8080/')], contextPath: null, war: 'target/*.war'
+  deploy adapters: [tomcat9(credentialsId: 'tomcatCredential-deploy', path: '', url: 'http://3.144.22.54:8080/')], contextPath: null, war: 'target/*.war'
   }
   } 
