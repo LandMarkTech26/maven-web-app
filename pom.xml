@@ -108,13 +108,13 @@ http://3.131.99.16:8081/repository/boa-snapshot/
 	    <repository>
 	      <id>nexus</id>
 	      <name>Landmark Technologies Releases Nexus Repository</name>
-	      <url>http://172.31.18.193:8081/repository/boa-releases/</url>
+	      <url>http://18.216.161.187:8081/repository/td-web-application-releases/</url>
 	    </repository>
 	    
 	    <snapshotRepository>
 	      <id>nexus</id>
 	      <name>Landmark Technologies Snapshot Nexus Repository </name>
-	      <url>http://172.31.18.193:8081/repository/boa-snapshot/</url>
+	      <url>http://18.216.161.187:8081/repository/td-web-application-snapshots/</url>
 	    </snapshotRepository>
 		
 	</distributionManagement>
