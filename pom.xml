@@ -110,8 +110,8 @@ http://3.131.99.16:8081/repository/boa-snapshot/
 	<distributionManagement>
 	    <repository>
 	      <id>nexus</id>
-	      <name>Landmark Technologies Releases Nexus Repository</name>
-	      <url>http://18.216.161.187:8081/repository/td-web-application-releases/</url>
+	      <name>Landmark Technologies Releases Nexus Repository</name>		    
+	      <url>http://18.220.108.122:4000/repository/ebay-ci-releases/</url>
 	    </repository>
 	    
 	    <snapshotRepository>
